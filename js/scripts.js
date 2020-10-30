@@ -7,7 +7,7 @@
 
 //User Interface Logic
 $(document).ready(function() {
-  //user input code here (event)
+  $("#inputForm").submit
   event.preventDefault();
 
-};)
+});
