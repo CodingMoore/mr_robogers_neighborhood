@@ -1,12 +1,27 @@
 //Business Logic
-let input = "6"
-let inputArray = parseFloat(input.split());
+let input = "14"
+let inputNum = parseFloat(input);
 let outputArray = [];
-for (let i = 0; i <= inputArray; i++) {
-outputArray.push(i)
+let inputArray = [];
+for (let i = 1; i <= inputNum; i++) {
+inputArray.push(i);
+stringArray = inputArray.join(" ");
 }
+  if (stringArray[i].includes(3)){
+    outputArray.push("Won't you be my neighbor?")
+  } else outputArray.push(i)
+  console.log(outputArray);
+} 
 
 
+  // }
+  // else if (i.contains(2)) {
+  //   outputArray.push("Boop!")
+  // }
+  // else if (i.contains(1)) {
+  //   outputArray.push("Beep!")
+  
+const result = outputArray.join(" ")
 
 
 
@@ -16,7 +31,7 @@ outputArray.push(i)
 $(document).ready(function() {
   $("#inputForm").submit(function(event) {
     const input = parseFloat($("#numInput").val());
-    
+    $("#outputText").text(result);
     event.preventDefault();
   });
 });
