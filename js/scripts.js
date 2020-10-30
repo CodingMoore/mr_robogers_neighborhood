@@ -4,7 +4,7 @@ let inputNum = parseFloat(input);
 let outputArray = [];
 let inputArray = [];
 let inputString = [];
-let splitArray = []
+let splitArray = [];
 for (let i = 0; i <= inputNum; i++) {
   inputArray.push(i);
   inputString = inputArray.join(" ");
