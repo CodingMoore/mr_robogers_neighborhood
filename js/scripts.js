@@ -1,11 +1,10 @@
 //Business Logic
 function mrRobo() {
-  let inputNum = parseFloat(input);
   let outputArray = [];
   let inputArray = [];
   let inputString = [];
   let splitArray = [];
-  for (let i = 0; i <= inputNum; i++) {
+  for (let i = 0; i <= input; i++) {
     inputArray.push(i);
     inputString = inputArray.join(" ");
     splitArray = inputString.split(" ");
@@ -22,15 +21,24 @@ function mrRobo() {
   const result = outputArray.join(", ")
   return result
 }
-
+tooHigh = "Lets not crash our browser, neighbor.  Try picking a number no larger than 10000."
+wholeNum = "Decimals are for the birds, not for the neighborhood.  Lets use whole numbers here."
+negativeNum = "Negative numbers are for negative neighbors. Lets use postive numbers here."
+zero = "'zero' isn't neighborly. Try something larger."
 
 //User Interface Logic
 $(document).ready(function() {
   $("#inputForm").submit(function(event) {
     event.preventDefault();
     input = $("#numInput").val();
-    mrRobo(input);
-    $("#outputText").text(mrRobo());
+    if (input > 10000) {
+      $("#outputText").text(tooHigh);
+    }
+    else if (input < 0) {
+      $("#outputText").text(negativeNum);
+    }
+    else if (input == 0) {
+      $("#outputText").text(zero);
+    } else $("#outputText").text(mrRobo());
   });
 });
-
