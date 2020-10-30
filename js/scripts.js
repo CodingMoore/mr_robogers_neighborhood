@@ -3,14 +3,15 @@ let input = "14"
 let inputNum = parseFloat(input);
 let outputArray = [];
 let inputArray = [];
-let newArray = [];
+let inputString = [];
+let splitArray = []
 for (let i = 1; i <= inputNum; i++) {
   inputArray.push(i);
-  newArray = inputArray.join(" ");
-  newArray.slice(" ")
+  inputString = inputArray.join(" ");
+  splitArray = inputString.split(" ");
 }
-console.log(newArray);  
-console.log(typeof(newArray));
+console.log(splitArray);  
+console.log(typeof(splitArray));
   
   //numberString = inputArray.join(" ");
   
@@ -27,7 +28,7 @@ console.log(typeof(newArray));
   // }
   // else if (i.contains(1)) {
   //   outputArray.push("Beep!")
-  
+
 const result = outputArray.join(" ")
 
 
