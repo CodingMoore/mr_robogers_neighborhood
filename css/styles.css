@@ -4,12 +4,12 @@
 #headerText {
   font-size: 30pt;
 }
-#outputError {
-  /* display: none; */
+.outputError {
+  display: none;
   background-color: red;
 }
-#outputText {
-  /* display: none; */
+.outputText {
+  display: none;
   background-color: green;
 }
 .btn {
