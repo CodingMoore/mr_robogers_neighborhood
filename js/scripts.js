@@ -23,7 +23,7 @@ function mrRobo() {
 tooHigh = "Lets not crash our browser, neighbor.  Try picking a number no larger than 10000."
 wholeNum = "Decimals are for the birds, not for the neighborhood.  Lets use whole numbers here."
 negativeNum = "Negative numbers are for negative neighbors. Lets use postive numbers here."
-zero = "'zero' isn't neighborly. Try something larger."
+zero = "'Zero' isn't neighborly. Try something larger."
 
 
 $(document).ready(function() {
