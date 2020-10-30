@@ -1,5 +1,5 @@
 //Business Logic
-let input = "14"
+let input = "31"
 let inputNum = parseFloat(input);
 let outputArray = [];
 let inputArray = [];
@@ -14,24 +14,12 @@ for (let i = 0; i <= inputNum; i++) {
   }
   else if (splitArray[i].includes("2")) {
     outputArray.push("Boop!")
-  } else outputArray.push(i)}
-console.log(outputArray);  
-
-  
-  //numberString = inputArray.join(" ");
-  
-  // if (stringArray[i].includes(3)){
-  //   outputArray.push("Won't you be my neighbor?")
-  // } else outputArray.push(i)
-  // console.log(outputArray);
- 
-
-
-  // }
-  // else if (i.contains(1)) {
-  //   outputArray.push("Beep!")
-
-const result = outputArray.join(" ")
+  }
+  else if (splitArray[i].includes("1")) {
+    outputArray.push("Beep!")
+  } else outputArray.push(i)
+}
+const result = outputArray.join(", ")
 
 
 
