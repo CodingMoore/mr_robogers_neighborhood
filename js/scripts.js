@@ -3,15 +3,22 @@ let input = "14"
 let inputNum = parseFloat(input);
 let outputArray = [];
 let inputArray = [];
+let newArray = [];
 for (let i = 1; i <= inputNum; i++) {
-inputArray.push(i);
-stringArray = inputArray.join(" ");
+  inputArray.push(i);
+  newArray = inputArray.join(" ");
+  newArray.slice(" ")
 }
-  if (stringArray[i].includes(3)){
-    outputArray.push("Won't you be my neighbor?")
-  } else outputArray.push(i)
-  console.log(outputArray);
-} 
+console.log(newArray);  
+console.log(typeof(newArray));
+  
+  //numberString = inputArray.join(" ");
+  
+  // if (stringArray[i].includes(3)){
+  //   outputArray.push("Won't you be my neighbor?")
+  // } else outputArray.push(i)
+  // console.log(outputArray);
+ 
 
 
   // }
