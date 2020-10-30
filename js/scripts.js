@@ -11,8 +11,10 @@ for (let i = 0; i <= inputNum; i++) {
   splitArray = inputString.split(" ");
   if (splitArray[i].includes("3")) {
     outputArray.push("Won't you be my neighbor?")
-  } else outputArray.push(i)
-}
+  }
+  else if (splitArray[i].includes("2")) {
+    outputArray.push("Boop!")
+  } else outputArray.push(i)}
 console.log(outputArray);  
 
   
@@ -25,9 +27,6 @@ console.log(outputArray);
  
 
 
-  // }
-  // else if (i.contains(2)) {
-  //   outputArray.push("Boop!")
   // }
   // else if (i.contains(1)) {
   //   outputArray.push("Beep!")
