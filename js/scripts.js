@@ -1,5 +1,5 @@
 //Business Logic
-let input = "31"
+let input
 let inputNum = parseFloat(input);
 let outputArray = [];
 let inputArray = [];
@@ -28,8 +28,9 @@ const result = outputArray.join(", ")
 //User Interface Logic
 $(document).ready(function() {
   $("#inputForm").submit(function(event) {
-    const input = parseFloat($("#numInput").val());
+    const input = $("#numInput").val();
     $("#outputText").text(result);
     event.preventDefault();
   });
 });
+console.log(input)
