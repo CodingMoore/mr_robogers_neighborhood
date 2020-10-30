@@ -1,4 +1,3 @@
-//Business Logic
 function mrRobo() {
   let outputArray = [];
   let inputArray = [];
@@ -26,19 +25,29 @@ wholeNum = "Decimals are for the birds, not for the neighborhood.  Lets use whol
 negativeNum = "Negative numbers are for negative neighbors. Lets use postive numbers here."
 zero = "'zero' isn't neighborly. Try something larger."
 
-//User Interface Logic
+
 $(document).ready(function() {
   $("#inputForm").submit(function(event) {
     event.preventDefault();
     input = $("#numInput").val();
     if (input > 10000) {
-      $("#outputText").text(tooHigh);
+      $(".outputError").text(tooHigh);
+      $(".outputError").show();
+      $(".outputText").hide();
     }
     else if (input < 0) {
-      $("#outputText").text(negativeNum);
+      $(".outputError").text(negativeNum);
+      $(".outputError").show();
+      $(".outputText").hide();
     }
     else if (input == 0) {
-      $("#outputText").text(zero);
-    } else $("#outputText").text(mrRobo());
+      $(".outputError").text(zero);
+      $(".outputError").show();
+      $(".outputText").hide();
+    } else {
+    $(".outputText").text(mrRobo());
+    $(".outputText").show();
+    $(".outputError").hide();
+    }
   });
 });

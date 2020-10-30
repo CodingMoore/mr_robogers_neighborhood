@@ -4,6 +4,14 @@
 #headerText {
   font-size: 30pt;
 }
+#outputError {
+  /* display: none; */
+  background-color: red;
+}
+#outputText {
+  /* display: none; */
+  background-color: green;
+}
 .btn {
   background-color: blanchedalmond;
   border-width: 5pt;
