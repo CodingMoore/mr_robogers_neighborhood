@@ -5,13 +5,16 @@ let outputArray = [];
 let inputArray = [];
 let inputString = [];
 let splitArray = []
-for (let i = 1; i <= inputNum; i++) {
+for (let i = 0; i <= inputNum; i++) {
   inputArray.push(i);
   inputString = inputArray.join(" ");
   splitArray = inputString.split(" ");
+  if (splitArray[i].includes("3")) {
+    outputArray.push("Won't you be my neighbor?")
+  } else outputArray.push(i)
 }
-console.log(splitArray);  
-console.log(typeof(splitArray));
+console.log(outputArray);  
+
   
   //numberString = inputArray.join(" ");
   
