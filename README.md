@@ -32,3 +32,6 @@ Description: mrRobo()
 
 Test: "It returns a list of numbers counting up to the number input by the user"
 Expect:mrRobo(5).toReturn "1, 2, 3, 4, 5"
+
+Test: "It returns "Won't you be my neighbor?" for any number containing "3".
+Expect:mrRobo(14)toReturn "1, 2, "won't you be my neighbor", 4, 5, 6, 7, 8, 9, 10, 11, 12, "wont you be my neighbor", 14"
