@@ -1,10 +1,11 @@
 //Business Logic
-let input = "5"
+let input = "6"
 let inputArray = parseFloat(input.split());
 let outputArray = [];
-for (let i = 0; i < inputArray.length; i++)
-outputArray = inputArray.push()
-return outputArray;
+for (let i = 0; i <= inputArray; i++) {
+outputArray.push(i)
+}
+
 
 
 
