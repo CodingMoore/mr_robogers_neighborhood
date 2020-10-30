@@ -24,9 +24,6 @@ function mrRobo() {
 }
 
 
-
-
-
 //User Interface Logic
 $(document).ready(function() {
   $("#inputForm").submit(function(event) {
