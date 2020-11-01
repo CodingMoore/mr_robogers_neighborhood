@@ -17,6 +17,7 @@
   border-color: black;
 }
 #errorBox {
+  display: none;
   background-color: rgb(252, 128, 128);
   border-radius: 10pt;
   border-style: dashed;
@@ -27,6 +28,7 @@
   padding-bottom: 10pt;
 }
 #outputBox {
+  display: none;
   background-color: rgb(145, 177, 145);
   border-radius: 10pt;
   border-style: solid;

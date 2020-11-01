@@ -32,22 +32,22 @@ $(document).ready(function() {
     input = $("#numInput").val();
     if (input > 10000) {
       $(".outputError").text(tooHigh);
-      $(".outputError").show();
-      $(".outputText").hide();
+      $("#errorBox").show();
+      $("#outputBox").hide();
     }
     else if (input < 0) {
       $(".outputError").text(negativeNum);
-      $(".outputError").show();
-      $(".outputText").hide();
+      $("#errorBox").show();
+      $("#outputBox").hide();
     }
     else if (input == 0) {
       $(".outputError").text(zero);
-      $(".outputError").show();
-      $(".outputText").hide();
+      $("#errorBox").show();
+      $("#outputBox").hide();
     } else {
     $(".outputText").text(mrRobo());
-    $(".outputText").show();
-    $(".outputError").hide();
+    $("#errorBox").hide();
+    $("#outputBox").show();
     }
   });
 });
