@@ -20,16 +20,16 @@ function mrRobo() {
   const result = outputArray.join(", ")
   return result
 }
-tooHigh = "Lets not crash our browser, neighbor.  Try picking a number no larger than 10000."
-wholeNum = "Decimals are for the birds, not for the neighborhood.  Lets use whole numbers here."
-negativeNum = "Negative numbers are for negative neighbors. Lets use postive numbers here."
-zero = "'Zero' isn't neighborly. Try something larger."
+const tooHigh = "Lets not crash our browser, neighbor.  Try picking a number no larger than 10000."
+const wholeNum = "Decimals are for the birds, not for the neighborhood.  Lets use whole numbers here."
+const negativeNum = "Negative numbers are for negative neighbors. Lets use postive numbers here."
+const zero = "'Zero' isn't neighborly. Try something larger."
 
 
 $(document).ready(function() {
   $("#inputForm").submit(function(event) {
     event.preventDefault();
-    input = $("#numInput").val();
+    const input = $("#numInput").val();
     if (input > 10000) {
       $(".outputError").text(tooHigh);
       $("#errorBox").show();
@@ -45,7 +45,7 @@ $(document).ready(function() {
       $("#errorBox").show();
       $("#outputBox").hide();
     } else {
-    $(".outputText").text(mrRobo());
+    $(".outputText").text(mrRobo(input));
     $("#errorBox").hide();
     $("#outputBox").show();
     }
