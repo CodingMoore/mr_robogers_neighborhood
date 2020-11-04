@@ -45,9 +45,9 @@ $(document).ready(function() {
       $("#errorBox").show();
       $("#outputBox").hide();
     } else {
-    $(".outputText").text(mrRobo(input));
-    $("#errorBox").hide();
-    $("#outputBox").show();
+      $(".outputText").text(mrRobo(input));
+      $("#errorBox").hide();
+      $("#outputBox").show();
     }
   });
 });
