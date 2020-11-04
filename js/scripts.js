@@ -1,4 +1,4 @@
-function mrRobo() {
+function mrRobo(input) {
   let outputArray = [];
   let inputArray = [];
   let inputString = [];
