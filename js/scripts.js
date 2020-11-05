@@ -15,15 +15,17 @@ function mrRobo(input) {
     }
     else if (splitArray[i].includes("1")) {
       outputArray.push("Beep!")
-    } else outputArray.push(i)
+    } else { 
+      outputArray.push(i);
+    }
   }
   const result = outputArray.join(", ")
   return result
 }
-const tooHigh = "Lets not crash our browser, neighbor.  Try picking a number no larger than 10000."
-const wholeNum = "Decimals are for the birds, not for the neighborhood.  Lets use whole numbers here."
-const negativeNum = "Negative numbers are for negative neighbors. Lets use postive numbers here."
-const zero = "'Zero' isn't neighborly. Try something larger."
+const tooHigh = "Lets not crash our browser, neighbor.  Try picking a number no larger than 10000.";
+const wholeNum = "Decimals are for the birds, not for the neighborhood.  Lets use whole numbers here.";
+const negativeNum = "Negative numbers are for negative neighbors. Lets use postive numbers here.";
+const zero = "'Zero' isn't neighborly. Try something larger.";
 
 
 $(document).ready(function() {
